@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-left: 10vh;
+            margin-right: 60px;
+        }
+
+        li {
+            padding: 5px;
+            font-size: x-small;
+        }
+
+        li:hover {
+            color: orange;
+        }
+
+        span {
+            color: orange;
+        }
+
+        #search {
+            border-radius: 20px;
+            border: none;
+            background: #FFFFFF;
+        }
+
+        #img_hero {
+            width: 300px;
+            height: 250px;
+        }
+
+        #half_1 {
+            padding: 20px;
+            padding-right: 40px;
+        }
+
+        #order {
+            background-color: #2F2105;
+            color: white;
+            border-radius: 20px;
+            width: 100px;
+            height: 30px;
+            font-size: x-small;
+        }
+
+        #about {
+            background-color: #2F2105;
+            color: white;
+            border-radius: 20px;
+            width: 100px;
+            height: 30px;
+            font-size: x-small;
+        }
+
+        .main {
+            width: 85vh;
+            margin: 0 auto;
+
+        }
+
+        .header {
+            padding: 20px;
+            background-color: #F7EBDA;
+            position: relative;
+            height: 630px;
+            background-image: url(./images/bg-image2.png);
+            background-size: contain;
+        }
+
+        .nav {
+            padding: 10px;
+            display: flex;
+        }
+
+        .half_width {
+            display: flex;
+            padding: 50px;
+        }
+
+        .popular {
+
+            height: 150px;
+            display: flex;
+            margin: 0 auto;
+            width: 80vh;
+            /* overflow-block: visible; */
+            position: absolute;
+            z-index: 8;
+
+        }
+
+        .polygon {
+            background-color: #F9D9AA;
+            height: 180px;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-top: 130px;
+            width: 80vh;
+            clear: right;
+            position: absolute;
+            overflow-block: visible
+                /* z-index: 7; */
+        }
+
+        .item {
+            /* position: absolute; */
+            width: 180px;
+            height: 200px;
+            padding: 15px;
+            margin: 10px;
+            margin-left: 20px;
+            background-color: #FFFFFF;
+            border-radius: 9px;
+            box-shadow: 5px 5px rgb(162, 158, 158);
+
+        }
+
+        .p_img {
+            width: max-content;
+            height: 130px;
+
+        }
+
+        .option {
+            /* color: #FFD28F; */
+            color: #FFD28F;
+            background-color: transparent;
+            width: 50px;
+            border: 1px solid #FFD28F;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .option:hover {
+            color: #FF902B;
+            border: 1px solid #FF902B;
+        }
+
+        .parent {
+            margin-top: 180px;
+            position: relative;
+            height: 800px;
+            margin-bottom: 100px;
+        }
+
+        .service {
+            text-align: center;
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .half {
+            width: 250px;
+            height: 250px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .about {
+            position: absolute;
+            margin-left: 150px;
+            margin-top: 100px;
+            z-index: 9;
+        }
+
+        .img {
+            width: 200px;
+            height: 310px;
+        }
+
+        .polygon2 {
+            background-image: url(./images/bg-image.png);
+            background-color: #F6EBDA;
+            height: 330px;
+            background-size: contain;
+            /* border-radius: 30px;
+            margin: 0 auto; */
+            margin-top: 180px;
+            /* width: 80vh; */
+            /* clear: right; */
+            position: absolute;
+            /* overflow-block: visible */
+        }
+
+        .text {
+            margin-left: 50%;
+            padding: 30px;
+            padding-top: 70px;
+            padding-right: 60px;
+
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            /* position: relative;
+            margin-top: 500px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <nav class="nav">
+                <img src="./images/logo_coffe.png" alt="logo">
+                <ul>
+                    <li class="menu">About Us</li>
+                    <li class="menu">Our product</li>
+                    <li class="menu">Delivery</li>
+                </ul>
+                <input type="search" name="Search" id="search">
+            </nav>
+            <section class="half_width">
+                <div id="half_1">
+                    <h1>Enjoy your <span>Coffee</span><br>
+                        before your activity</h1>
+                    <br>
+                    <br>
+                    <p>Boost your productivity and build your mood with a glass of coffee in the morning</p><br>
+                    <br>
+                    <button id="order">Order Now</button>
+                </div>
+                <div class="" id="sec1">
+                    <img src="./images/img-hero.png" alt="" id="img_hero">
+                </div>
+            </section>
+            <section class="popular">
+                <div class="item">
+                    <img src="./images/unsplash_RFHFV7lVQBY.png" alt="" class="p_img">
+                    <h4>vanilla latte 21k</h4>
+
+                    <br>
+                    <button class="option">Hot</button>
+                    <button class="option">Cold</button>
+                </div>
+                <div class="item">
+                    <img src="./images/espresso.png" alt="" class="p_img">
+                    <h4>vanilla latte 21k</h4>
+
+                    <br>
+                    <button class="option">Hot</button>
+                    <button class="option">Cold</button>
+                </div>
+                <div class="item">
+                    <img src="./images/hazelnut latte.png" alt="" class="p_img">
+                    <h4>vanilla latte 21k</h4>
+
+                    <br>
+                    <button class="option">Hot</button>
+                    <button class="option">Cold</button>
+                </div>
+            </section>
+            <div class="polygon"></div>
+        </div>
+        <div class="parent">
+            <h3>How to use delivery service</h3>
+            <br>
+            <br>
+            <div class="service">
+                <div class="half">
+                    <img src="./images/image.png" alt="">
+                    <h4>choose your coffee</h4>
+                    <p><small>there are 20+ coffees for you</small></p>
+                </div>
+                <div class="half">
+                    <img src="./images/coffee-cup 2.png" alt="">
+                    <h4>choose your coffee</h4>
+                    <p><small>there are 20+ coffees for you</small></p>
+                </div>
+                <div class="half">
+                    <img src="./images/food-truck 1.png" alt="">
+                    <h4>choose your coffee</h4>
+                    <p><small>there are 20+ coffees for you</small></p>
+                </div>
+            </div>
+            <section class="about">
+                <div class="about_us">
+                    <img src="./images/unsplash_3n3mPoGko8g.png" alt="" class="img">
+                </div>
+            </section>
+            <div class="polygon2">
+                <div class="text">
+                    <h3>About us</h3>
+                    <br>
+                    <h4>We provide quality coffee, and ready to deliver.</h4><br>
+                    <p><small>We are a company that makes and distributes delicious drinks. our main product is made
+                            with a
+                            secret recipe and
+                            available in stores worldwide.</small></p>
+                    <br>
+                    <button id="about">Get your coffee</button>
+                </div>
+            </div>
+        </div>
+        <h3>Special menu for you</h3>
+        <div class="menu">
+            <br>
+
+            <div class="item">
+                <img src="./images/unsplash_SqYmTDQYMjo.png" alt="" class="p_img">
+                <h4>vanilla latte 21k</h4>
+                <br>
+                <p><small>Wafle with Ice cream</small></p>
+            </div>
+
+            <div class="item">
+                <img src="./images/unsplash_SqYmTDQYMjo (1).png" alt="" class="p_img">
+                <h4>vanilla latte 21k</h4>
+                <br>
+                <p><small>Wafle with Ice cream</small></p>
+            </div>
+
+            <div class="item">
+                <img src="./images/unsplash_SqYmTDQYMjo (2).png" alt="" class="p_img">
+                <h4>vanilla latte 21k</h4>
+                <br>
+                <p><small>Wafle with Ice cream</small></p>
+            </div>
+            <div class="item">
+                <img src="./images/unsplash_SqYmTDQYMjo (3).png" alt="" class="p_img">
+                <h4>vanilla latte 21k</h4>
+                <br>
+                <p><small>Wafle with Ice cream</small></p>
+            </div>
+            <div class="item">
+                <img src="./images/unsplash_SqYmTDQYMjo (4).png" alt="" class="p_img">
+                <h4>vanilla latte 21k</h4>
+                <br>
+                <p><small>Wafle with Ice cream</small></p>
+            </div>
+            <div class="item">
+                <img src="./images/unsplash_QXzdFy92CGY.png" alt="" class="p_img">
+                <h4>vanilla latte 21k</h4>
+                <br>
+                <p><small>Wafle with Ice cream</small></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
